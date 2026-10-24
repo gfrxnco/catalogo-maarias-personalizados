@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FDF2F7">
+  <meta name="description" content="Conheça os cadernos, planners, agendas e lembranças personalizadas da Maarias Personalizados.">
+
+  <title>Maarias Personalizados | Catálogo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="/" class="logo">
+    <img src="imagens/logo.jpeg" alt="Mariass Personalizados">
+</a>
+
+      <nav class="nav-links">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a
+        class="instagram-button"
+        id="instagramLink"
+        href="https://www.instagram.com/maariass.personalizados/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram ↗
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero container">
+      <div class="hero-content">
+
+        <span class="hero-label">MAARIAS PERSONALIZADOS</span>
+
+        <h1>Feito com carinho em cada detalhe!</h1>
+
+        <p>
+          Cadernos, planners e lembranças para tornar
+          seus momentos ainda mais especiais.
+        </p>
+
+        <a href="#catalogo" class="hero-button">
+          Conhecer catálogo ↓
+        </a>
+
+      </div>
+    </section>
+
+    <section class="catalog container" id="catalogo">
+
+      <div class="search-box">
+        <span aria-hidden="true">⌕</span>
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Buscar no catálogo"
+          aria-label="Buscar produtos"
+        >
+      </div>
+
+      <div class="categories" id="categories">
+
+        <button type="button" class="category active" data-category="Todos">
+          Todos
+        </button>
+
+        <button type="button" class="category" data-category="Cadernos">
+          Cadernos
+        </button>
+
+        <button type="button" class="category" data-category="Planners">
+          Planners
+        </button>
+
+        <button type="button" class="category" data-category="Agendas">
+          Agendas
+        </button>
+
+        <button type="button" class="category" data-category="Lembranças">
+          Lembranças
+        </button>
+
+        <button type="button" class="category" data-category="Coleções">
+          Coleções
+        </button>
+
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">FEITO PARA VOCÊ</span>
+          <h2>Nosso catálogo</h2>
+          <p id="productCount">Conheça nossos produtos.</p>
+        </div>
+      </div>
+
+      <div class="products" id="products"></div>
+
+      <div class="empty-state" id="emptyState">
+        <h3>Nenhum produto encontrado</h3>
+        <p>Tente buscar por outro nome ou categoria.</p>
+      </div>
+
+    </section>
+
+    <section class="about container" id="sobre">
+
+      <span class="eyebrow">NOSSA ESSÊNCIA</span>
+
+      <h2>Pequenos detalhes, grandes lembranças.</h2>
+
+      <p>
+        Cada produto é pensado com carinho para deixar
+        sua rotina mais especial. Personalizamos cadernos,
+        planners e lembranças para transformar suas ideias
+        em produtos únicos.
+      </p>
+
+    </section>
+
+    <section class="contact container" id="contato">
+
+      <span class="eyebrow">VAMOS CONVERSAR?</span>
+
+      <h2>Seu próximo personalizado começa aqui!</h2>
+
+      <p>
+        Gostou de algum produto? Entre em contato para
+        consultar valores, opções de personalização,
+        disponibilidade e encomendas.
+      </p>
+
+      <div class="contact-buttons">
+
+        <a
+          id="whatsappLink"
+          href="https://wa.me/5575982797300"
+          class="whatsapp-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp ↗
+        </a>
+
+        <a
+          id="instagramContact"
+          href="https://www.instagram.com/maariass.personalizados/"
+          class="instagram-contact"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram ↗
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <a href="#" class="footer-logo">
+      MAARIAS PERSONALIZADOS
+    </a>
+
+    <p>Feito com carinho em cada detalhe. 💗</p>
+
+    <p>
+      © <span id="currentYear"></span>
+      Maarias Personalizados
+    </p>
+
+  </footer>
+
+</body>
+</html>

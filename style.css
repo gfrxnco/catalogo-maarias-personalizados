@@ -1,0 +1,1701 @@
+/* =========================
+
+   CONFIGURAÇÕES GERAIS
+
+========================= */
+
+
+
+:root {
+
+  --pink: #D987AE;
+
+  --pink-dark: #A94F7B;
+
+  --pink-light: #FCEEF4;
+
+  --background: #FFFAFC;
+
+  --white: #FFFFFF;
+
+  --text: #3D3037;
+
+  --text-light: #786A72;
+
+  --border: #F0DDE6;
+
+  --shadow: 0 5px 20px rgba(169, 79, 123, 0.10);
+
+}
+
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+html {
+
+  scroll-behavior: smooth;
+
+  scroll-padding-top: 100px;
+
+}
+
+
+
+body {
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  background: var(--background);
+
+  color: var(--text);
+
+  line-height: 1.6;
+
+}
+
+
+
+a {
+
+  color: inherit;
+
+}
+
+
+
+button,
+
+input {
+
+  font: inherit;
+
+}
+
+
+
+/* =========================
+
+   CONTAINER
+
+========================= */
+
+
+
+.container {
+
+  width: min(1120px, 92%);
+
+  margin-inline: auto;
+
+}
+
+
+
+/* =========================
+
+   CABEÇALHO
+
+========================= */
+
+
+
+.header {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  background: rgba(255, 250, 252, 0.96);
+
+  border-bottom: 1px solid var(--border);
+
+  backdrop-filter: blur(12px);
+
+}
+
+
+
+.navbar {
+
+  min-height: 82px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+}
+
+
+
+.logo {
+
+  display: flex;
+
+  flex-direction: column;
+
+  color: var(--pink-dark);
+
+  text-decoration: none;
+
+  font-size: 1.7rem;
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+}
+
+
+
+.logo span {
+
+  margin-top: 5px;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 3px;
+
+}
+
+
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+}
+
+
+
+.nav-links a {
+
+  color: var(--text);
+
+  font-size: 0.95rem;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+
+}
+
+
+
+.nav-links a:hover {
+
+  color: var(--pink-dark);
+
+}
+
+
+
+.instagram-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 10px 17px;
+
+  border: 1px solid var(--pink);
+
+  border-radius: 10px;
+
+  color: var(--pink-dark);
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  transition: 0.2s ease;
+
+}
+
+
+
+.instagram-button:hover {
+
+  background: var(--pink-light);
+
+  transform: translateY(-2px);
+
+}
+
+
+
+/* =========================
+
+   BANNER PRINCIPAL
+
+========================= */
+
+
+
+.hero {
+
+  position: relative;
+
+  min-height: 440px;
+
+  margin-top: 30px;
+
+  margin-bottom: 45px;
+
+  padding: 75px 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+
+  border-radius: 24px;
+
+  background:
+
+    radial-gradient(circle at 15% 20%, #FFFFFF 0, transparent 35%),
+
+    linear-gradient(135deg, #FCEEF4, #F8DDE9);
+
+  text-align: center;
+
+}
+
+
+
+.hero-content {
+
+  max-width: 750px;
+
+}
+
+
+
+.hero-label {
+
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: var(--pink-dark);
+
+  font-size: 0.78rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+}
+
+
+
+.hero h1 {
+
+  margin-bottom: 20px;
+
+  color: var(--pink-dark);
+
+  font-size: clamp(2.2rem, 5vw, 4rem);
+
+  font-weight: 700;
+
+  line-height: 1.15;
+
+}
+
+
+
+.hero p {
+
+  max-width: 570px;
+
+  margin: 0 auto 28px;
+
+  color: var(--text-light);
+
+  font-size: 1.05rem;
+
+}
+
+
+
+.hero-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 13px 23px;
+
+  border-radius: 11px;
+
+  background: var(--pink-dark);
+
+  color: var(--white);
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.2s ease;
+
+}
+
+
+
+.hero-button:hover {
+
+  background: #8D3C65;
+
+  transform: translateY(-2px);
+
+}
+
+
+
+/* =========================
+
+   CATÁLOGO E PESQUISA
+
+========================= */
+
+
+
+.catalog {
+
+  padding-top: 35px;
+
+  padding-bottom: 70px;
+
+}
+
+
+
+.search-box {
+
+  max-width: 600px;
+
+  min-height: 54px;
+
+  margin: 0 auto 25px;
+
+  padding: 0 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 13px;
+
+  background: var(--white);
+
+  box-shadow: var(--shadow);
+
+}
+
+
+
+.search-box span {
+
+  color: var(--pink-dark);
+
+  font-size: 1.8rem;
+
+  line-height: 1;
+
+}
+
+
+
+.search-box input {
+
+  width: 100%;
+
+  min-width: 0;
+
+  padding: 14px 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: var(--text);
+
+  font-size: 0.95rem;
+
+}
+
+
+
+.search-box input::placeholder {
+
+  color: #A99AA2;
+
+}
+
+
+
+.search-box:focus-within {
+
+  border-color: var(--pink);
+
+  box-shadow: 0 0 0 3px rgba(217, 135, 174, 0.15);
+
+}
+
+
+
+/* =========================
+
+   CATEGORIAS
+
+========================= */
+
+
+
+.categories {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 50px;
+
+}
+
+
+
+.category {
+
+  padding: 9px 17px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 30px;
+
+  background: var(--white);
+
+  color: var(--text-light);
+
+  font-size: 0.9rem;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+}
+
+
+
+.category:hover,
+
+.category.active {
+
+  border-color: var(--pink-dark);
+
+  background: var(--pink-dark);
+
+  color: var(--white);
+
+}
+
+
+
+/* =========================
+
+   TÍTULO DOS PRODUTOS
+
+========================= */
+
+
+
+.section-heading {
+
+  margin-bottom: 27px;
+
+}
+
+
+
+.eyebrow {
+
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: var(--pink-dark);
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+
+
+.section-heading h2,
+
+.about h2,
+
+.contact h2 {
+
+  margin-bottom: 9px;
+
+  color: var(--text);
+
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+
+  line-height: 1.25;
+
+}
+
+
+
+.section-heading p {
+
+  color: var(--text-light);
+
+}
+
+
+
+/* =========================
+
+   CARDS DOS PRODUTOS
+
+========================= */
+
+
+
+.products {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+
+}
+
+
+
+.product-card {
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  border: 1px solid var(--border);
+
+  border-radius: 17px;
+
+  background: var(--white);
+
+  box-shadow: var(--shadow);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+
+
+.product-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 28px rgba(169, 79, 123, 0.15);
+
+}
+
+
+
+.product-image-container {
+
+  width: 100%;
+
+  height: 250px;
+
+  overflow: hidden;
+
+  background: var(--pink-light);
+
+}
+
+
+
+.product-image {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.35s ease;
+
+}
+
+
+
+.product-card:hover .product-image {
+
+  transform: scale(1.04);
+
+}
+
+
+
+.product-info {
+
+  flex: 1;
+
+  padding: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+.product-category {
+
+  align-self: flex-start;
+
+  margin-bottom: 10px;
+
+  padding: 4px 10px;
+
+  border-radius: 20px;
+
+  background: var(--pink-light);
+
+  color: var(--pink-dark);
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+}
+
+
+
+.product-name {
+
+  margin-bottom: 9px;
+
+  font-size: 1.15rem;
+
+  line-height: 1.4;
+
+}
+
+
+
+.product-description {
+
+  margin-bottom: 16px;
+
+  color: var(--text-light);
+
+  font-size: 0.9rem;
+
+}
+
+
+
+\ Preços /
+
+
+
+.price {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--pink-dark);
+
+  font-size: 1.1rem;
+
+  font-weight: 700;
+
+}
+
+
+
+.product-bottom {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  gap: 8px;
+
+  margin-top: auto;
+
+  padding-top: 12px;
+
+}
+
+
+
+.contact-product {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 100%;
+
+  padding: 11px 13px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: var(--pink);
+
+  color: var(--white);
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 0.88rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+}
+
+
+
+.contact-product:hover {
+
+  background: var(--pink-dark);
+
+  transform: translateY(-2px);
+
+}
+
+
+
+\ Nenhum produto encontrado /
+
+
+
+.empty-state {
+
+  display: none;
+
+  padding: 45px 20px;
+
+  text-align: center;
+
+  color: var(--text-light);
+
+}
+
+
+
+.empty-state h3 {
+
+  margin-bottom: 8px;
+
+  color: var(--text);
+
+}
+
+
+
+.empty-state.visible {
+
+  display: block;
+
+}
+
+
+
+/* =========================
+
+   SOBRE
+
+========================= */
+
+
+
+.about {
+
+  margin-bottom: 65px;
+
+  padding: 65px 7%;
+
+  border: 1px solid var(--border);
+
+  border-radius: 22px;
+
+  background: var(--pink-light);
+
+  text-align: center;
+
+}
+
+
+
+.about h2 {
+
+  max-width: 700px;
+
+  margin: 0 auto 20px;
+
+  color: var(--pink-dark);
+
+}
+
+
+
+.about p {
+
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  color: var(--text-light);
+
+}
+
+
+
+/* =========================
+
+   CONTATO
+
+========================= */
+
+
+
+.contact {
+
+  padding-top: 20px;
+
+  padding-bottom: 75px;
+
+  text-align: center;
+
+}
+
+
+
+.contact h2 {
+
+  max-width: 750px;
+
+  margin: 0 auto 15px;
+
+  color: var(--pink-dark);
+
+}
+
+
+
+.contact p {
+
+  max-width: 680px;
+
+  margin: 0 auto 25px;
+
+  color: var(--text-light);
+
+}
+
+
+
+.contact-buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 13px;
+
+}
+
+
+
+.whatsapp-button,
+
+.instagram-contact {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 150px;
+
+  padding: 12px 20px;
+
+  border: 1px solid var(--pink);
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.2s ease;
+
+}
+
+
+
+.whatsapp-button {
+
+  border-color: #248B56;
+
+  background: #248B56;
+
+  color: var(--white);
+
+}
+
+
+
+.whatsapp-button:hover {
+
+  background: #176D41;
+
+  transform: translateY(-2px);
+
+}
+
+
+
+.instagram-contact {
+
+  background: var(--white);
+
+  color: var(--pink-dark);
+
+}
+
+
+
+.instagram-contact:hover {
+
+  background: var(--pink-light);
+
+  transform: translateY(-2px);
+
+}
+
+
+
+/* =========================
+
+   RODAPÉ
+
+========================= */
+
+
+
+.footer {
+
+  padding: 30px 4%;
+
+  border-top: 1px solid var(--border);
+
+  background: var(--white);
+
+  text-align: center;
+
+}
+
+
+
+.footer-logo {
+
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: var(--pink-dark);
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-decoration: none;
+
+}
+
+
+
+.footer p {
+
+  margin-top: 5px;
+
+  color: var(--text-light);
+
+  font-size: 0.85rem;
+
+}
+
+
+
+/* =========================
+
+   TABLETS
+
+========================= */
+
+
+
+@media (max-width: 900px) {
+
+  .navbar {
+
+    gap: 16px;
+
+  }
+
+
+
+  .nav-links {
+
+    gap: 17px;
+
+  }
+
+
+
+  .products {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+
+
+  .product-image-container {
+
+    height: 230px;
+
+  }
+
+}
+
+
+
+/* =========================
+
+   CELULARES
+
+========================= */
+
+
+
+@media (max-width: 600px) {
+
+  .container {
+
+    width: 92%;
+
+  }
+
+
+
+  .navbar {
+
+    min-height: auto;
+
+    padding-top: 16px;
+
+    padding-bottom: 16px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+  }
+
+
+
+ .logo {
+
+    display: flex;
+
+    align-items: center;
+
+    flex: 0 0 auto;
+
+    max-width: 160px;
+
+    text-decoration: none;
+
+}
+
+
+
+.logo img {
+
+    display: block;
+
+    width: 150px;
+
+    max-width: 100%;
+
+    height: 60px;
+
+    object-fit: contain;
+
+}
+
+
+
+  .nav-links {
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 17px;
+
+  }
+
+
+
+  .nav-links a {
+
+    font-size: 0.88rem;
+
+  }
+
+
+
+  .instagram-button {
+
+    padding: 8px 13px;
+
+  }
+
+
+
+  .hero {
+
+    min-height: 360px;
+
+    margin-top: 20px;
+
+    margin-bottom: 30px;
+
+    padding: 50px 7%;
+
+    border-radius: 18px;
+
+  }
+
+
+
+  .hero h1 {
+
+    font-size: 2.25rem;
+
+  }
+
+
+
+  .hero p {
+
+    font-size: 0.95rem;
+
+  }
+
+
+
+  .catalog {
+
+    padding-top: 20px;
+
+    padding-bottom: 45px;
+
+  }
+
+
+
+  .categories {
+
+    justify-content: flex-start;
+
+    gap: 8px;
+
+    margin-bottom: 35px;
+
+  }
+
+
+
+  .category {
+
+    padding: 8px 13px;
+
+    font-size: 0.82rem;
+
+  }
+
+
+
+  .section-heading {
+
+    margin-bottom: 22px;
+
+  }
+
+
+
+  .products {
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+  }
+
+
+
+  .product-image-container {
+
+    height: 270px;
+
+  }
+
+
+
+  .product-info {
+
+    padding: 18px;
+
+  }
+
+
+
+  .about {
+
+    margin-bottom: 45px;
+
+    padding: 45px 7%;
+
+    border-radius: 18px;
+
+  }
+
+
+
+  .contact {
+
+    padding-bottom: 50px;
+
+  }
+
+
+
+  .contact-buttons {
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+
+
+  .whatsapp-button,
+
+  .instagram-contact {
+
+    width: 100%;
+
+  }
+
+}
+
+
+
+/* =========================
+
+   ACESSIBILIDADE
+
+========================= */
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+
+    scroll-behavior: auto;
+
+  }
+
+
+
+  *,
+
+  *::before,
+
+  *::after {
+
+    animation-duration: 0.01ms !important;
+
+    transition-duration: 0.01ms !important;
+
+  }
+
+}
+
+
+/* =========================
+   RESPONSIVIDADE E AJUSTES FINAIS
+   ========================= */
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 0 1 150px;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.logo img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: 62px;
+  object-fit: contain;
+}
+
+.navbar {
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.products {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.product-image {
+  display: block;
+}
+
+button, input, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, .category, .contact-product, .hero-button, .instagram-button,
+.whatsapp-button, .instagram-contact {
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(169, 79, 123, 0.55);
+  outline-offset: 3px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: min(1120px, calc(100% - 64px));
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    gap: 16px;
+  }
+
+  .logo {
+    flex-basis: 125px;
+  }
+
+  .logo img {
+    width: 125px;
+    height: 56px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .hero {
+    min-height: 380px;
+    padding: 56px 6%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .navbar {
+    min-height: auto;
+    padding: 12px 0;
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    max-width: 125px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: 52px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .nav-links a {
+    font-size: 0.88rem;
+    padding: 5px 0;
+  }
+
+  .instagram-button {
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    min-height: 0;
+    margin-top: 18px;
+    margin-bottom: 28px;
+    padding: 42px 22px;
+    border-radius: 18px;
+  }
+
+  .hero-label {
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.35rem);
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 22px;
+  }
+
+  .hero-button {
+    max-width: 100%;
+    padding: 12px 18px;
+  }
+
+  .catalog {
+    padding-top: 18px;
+    padding-bottom: 45px;
+  }
+
+  .search-box {
+    margin-bottom: 20px;
+    min-height: 50px;
+  }
+
+  .categories {
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 34px;
+  }
+
+  .category {
+    padding: 8px 13px;
+    font-size: 0.82rem;
+  }
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .section-heading h2,
+  .about h2,
+  .contact h2 {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+  }
+
+  .products {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .product-image-container {
+    height: clamp(210px, 68vw, 300px);
+  }
+
+  .product-info {
+    padding: 17px;
+  }
+
+  .about {
+    margin-bottom: 42px;
+    padding: 38px 22px;
+    border-radius: 18px;
+  }
+
+  .contact {
+    padding-top: 10px;
+    padding-bottom: 48px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .whatsapp-button,
+  .instagram-contact {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 25px 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .logo img {
+    width: 105px;
+    height: 48px;
+  }
+
+  .nav-links {
+    gap: 8px 13px;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+  }
+
+  .instagram-button {
+    padding: 7px 9px;
+    font-size: 0.78rem;
+  }
+
+  .hero {
+    padding: 34px 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  /* Mensagem exibida quando não há produtos */
+.empty-state {
+    display: none !important;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.empty-state.visible {
+    display: block !important;
+}
+}
